@@ -1,0 +1,37 @@
+@import 'utils/design';
+
+body {
+	background: #333333;
+
+	> div {
+		@include flex-col;
+
+		.section-home {
+			margin: 12px 32px;
+			@include flex-row;
+			width: 80vw !important;
+			overflow: auto;
+			justify-content: flex-start;
+
+			.char-list-item {
+				@include flex-col;
+				width: fit-content;
+				margin: 0 8% 16px 0;
+				padding: 0;
+				background: #444;
+				align-items: flex-start;
+				justify-content: flex-start;
+
+				h2 {
+					height: 3em;
+					color: #FAFAFA;
+					margin: 12px 12px 12px;
+					font-size: 14px;
+					font-weight: 500;
+					text-transform: uppercase;
+					text-align: start;
+				}
+			}
+		}
+	}
+}
