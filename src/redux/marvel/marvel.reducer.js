@@ -1,4 +1,5 @@
 import { marvelTypes } from './marvel.types';
+import * as utils from './marvel.utils';
 
 
 const INITIAL_STATE = {
